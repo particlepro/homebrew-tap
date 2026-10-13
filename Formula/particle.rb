@@ -1,25 +1,25 @@
 class Particle < Formula
   desc "The command-line interface for Particle — podcast intelligence from your terminal"
   homepage "https://particle.pro"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/particlepro/particle-cli-releases/releases/download/v0.1.0/particle-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "93c50a79a9fcd0d014eb34ac2e6be05a2ab8589a8e0f74d8c97f8b991963ea13"
+      url "https://github.com/particlepro/particle-cli/releases/download/v0.1.1/particle-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "55664aef21ba42811d007c3b1ac283c1309409d36c2042d37fb6c9776233be14"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/particlepro/particle-cli-releases/releases/download/v0.1.0/particle-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "ab6790bbb0a8cddf2f6b716da6474576fda6b56cb836fd285d9697ba6edfa7b5"
+      url "https://github.com/particlepro/particle-cli/releases/download/v0.1.1/particle-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "0cda5a974152704ae9852dc56042a01136b2c1b35be9f94b6d539fd882cd8b71"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/particlepro/particle-cli-releases/releases/download/v0.1.0/particle-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4e349a5014403fff53fcd72ace98dac97893e5515fbbae38f0e5c702ca2a18aa"
+      url "https://github.com/particlepro/particle-cli/releases/download/v0.1.1/particle-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "51a0873d0b2111a8711fe322d952e899bed3db830682a8e06670b99ee4954b1f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/particlepro/particle-cli-releases/releases/download/v0.1.0/particle-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "02cd4ba1e130aa5086a3bbc84496e04e6e41cd146d3554f3d0b86c08e80e1ea5"
+      url "https://github.com/particlepro/particle-cli/releases/download/v0.1.1/particle-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "45aeb1d6822acc2d81d4661066a343fa655291f21b0a032c5740c5926db23226"
     end
   end
   license "Apache-2.0"
