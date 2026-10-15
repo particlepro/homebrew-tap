@@ -1,25 +1,25 @@
 class Particle < Formula
   desc "The command-line interface for Particle — podcast intelligence from your terminal"
   homepage "https://particle.pro"
-  version "0.3.0"
+  version "0.3.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/particlepro/particle-cli/releases/download/v0.3.0/particle-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "b68e40b73b2f359b873fde308a43b4b75e7b26288b732eb85cfef759775720f2"
+      url "https://github.com/particlepro/particle-cli/releases/download/v0.3.1/particle-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "726f38b137f4243fe640d2b8c12ce8f014b1088cae369e7a6d04cf2d956e47ea"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/particlepro/particle-cli/releases/download/v0.3.0/particle-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "9d06816f203084cf712306bec6f5e752494e79abcf1e8cb49fb1d3b69b7a57dd"
+      url "https://github.com/particlepro/particle-cli/releases/download/v0.3.1/particle-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "41b11fb42282e97be1dd570ab037bf318defef2a87762a9ca089c3477d64aaa7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/particlepro/particle-cli/releases/download/v0.3.0/particle-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3e64a221bad2f31b774e15e6d556a823929edb33a7477bd6e1f1d11f243492fe"
+      url "https://github.com/particlepro/particle-cli/releases/download/v0.3.1/particle-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "1f8d9b6632c11feaeaf93e4ed9aea30323dc40b12508794e7087676583e7788c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/particlepro/particle-cli/releases/download/v0.3.0/particle-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2b84121076e03d94253d61f603d273d5c070c6d61295c5aa0d7f644102e1cd93"
+      url "https://github.com/particlepro/particle-cli/releases/download/v0.3.1/particle-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0387ac47ac77c2ed3c4b871a3abf90fe16ac6dd862346a47cf0fe18d1b1f74f7"
     end
   end
   license "Apache-2.0"
@@ -64,8 +64,6 @@ class Particle < Formula
     end
 
     install_binary_aliases!
-
-    generate_completions_from_executable(bin/"particle", "completion")
 
     # Homebrew will automatically install these, so we don't need to do that
     doc_files = Dir["README.*", "readme.*", "LICENSE", "LICENSE.*", "CHANGELOG.*"]
